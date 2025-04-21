@@ -1,6 +1,6 @@
 package Function_Library.Matrix_operations.V2;
 
-import static Function_Library.Matrix_operations.V2.chkr.checker;
+import static Function_Library.Matrix_operations.V2.Checker.checker;
 
 // For performing subtraction
 final public class S {
