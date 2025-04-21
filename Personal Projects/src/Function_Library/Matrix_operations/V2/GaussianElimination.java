@@ -3,7 +3,7 @@ package Function_Library.Matrix_operations.V2;
 import java.util.Arrays;
 import java.util.stream.IntStream;
 
-public class HO {
+final public class GaussianElimination {
     // Incomplete
     public static double[] Rowop2(double[] A, double[] B, char op){
         // Incomplete
