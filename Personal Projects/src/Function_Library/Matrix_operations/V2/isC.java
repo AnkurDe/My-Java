@@ -16,15 +16,4 @@ final public class isC {
         }
         return result;
     }//Tested ok
-
-    public static boolean isCorrupt(float[][] input) {
-        if (input.length == 1)
-            return true;
-        for (int i = 0; i < input.length - 1; i++) {
-            if (input[i].length != input[i + 1].length) {
-                return true;
-            }
-        }
-        return false;
-    }//Tested ok
 }
