@@ -10,13 +10,4 @@ public class S extends Mult {
                 Subract[i][j] = (A[i][j] - B[i][j]);
         return Subract;
     }//Tested ok
-
-    public static float[][] Subtr(float[][] A, float[][] B) {
-        checker(A, B);
-        float[][] Subract = new float[A.length][A.length];
-        for (int i = 0; i < A.length; i++)
-            for (int j = 0; j < A.length; j++)
-                Subract[i][j] = (A[i][j] - B[i][j]);
-        return Subract;
-    }//Tested ok
 }
