@@ -1,6 +1,6 @@
 package Function_Library.Matrix_operations.V2;
 
-public class LU {
+final public class LUDecomopsition {
     public static double[][][] lu(double[][] A) {
         int n = A.length;
         double[][] L = new double[n][n];
