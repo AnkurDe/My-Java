@@ -1,6 +1,6 @@
 package Function_Library.Matrix_operations.V2;
 
-import static Function_Library.Matrix_operations.V2.isC.isCorrupt;
+import static Function_Library.Matrix_operations.V2.IsCorrupt.isCorrupt;
 
 // To check if two matrices are corrupted or not
 final public class Checker {
