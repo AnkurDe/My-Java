@@ -9,7 +9,7 @@ final public class S {
         double[][] Subract = new double[A.length][A.length];
         for (int i = 0; i < A.length; i++)
             for (int j = 0; j < A.length; j++)
-                Subract[i][j] = (A[i][j] - B[i][j]);
-        return Subract;
+                Subtract[i][j] = (A[i][j] - B[i][j]);
+        return Subtract;
     }//Tested ok
 }
