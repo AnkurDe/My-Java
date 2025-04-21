@@ -9,9 +9,9 @@ public class LU {
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
                 if (i == j) {
-                    L[i][j] = 1.0F;
+                    L[i][j] = 1.0;
                 } else {
-                    L[i][j] = 0.0F;
+                    L[i][j] = 0.0;
                 }
                 U[i][j] = A[i][j];
             }
