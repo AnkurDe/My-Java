@@ -11,14 +11,4 @@ final public class IS {
         }
         return sum;
     }
-
-    public static float sum(float[][] input) {
-        float sum = 0;
-        for (float[] doubles : input) {
-            for (int j = 0; j < input[0].length; j++) {
-                sum += doubles[j];
-            }
-        }
-        return sum;
-    }
 }
