@@ -3,7 +3,7 @@ package Function_Library.Matrix_operations.V2;
 import static Function_Library.Matrix_operations.V2.chkr.checker;
 
 // For performing Addition
-final public class A {
+final public class Addition {
     public static double[][] Add(double[][] A, double[][] B) {
         checker(A, B);
         double[][] Sum = new double[A.length][A[0].length];
