@@ -1,7 +1,7 @@
 package Function_Library.Matrix_operations.V2;
 
 import static Function_Library.Matrix_operations.V2.Zeromatr.Zeros;
-import static Function_Library.Matrix_operations.V2.compl.complm;
+import static Function_Library.Matrix_operations.V2.Comply.complm;
 
 // To perform matrix multiplication
 final public class Multiplication {
