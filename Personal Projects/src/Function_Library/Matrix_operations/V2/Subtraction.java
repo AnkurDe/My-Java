@@ -3,7 +3,7 @@ package Function_Library.Matrix_operations.V2;
 import static Function_Library.Matrix_operations.V2.Checker.checker;
 
 // For performing subtraction
-final public class S {
+final public class Subtraction {
     public static double[][] Subtr(double[][] A, double[][] B) {
         checker(A, B);
         double[][] Subtract = new double[A.length][A.length];
