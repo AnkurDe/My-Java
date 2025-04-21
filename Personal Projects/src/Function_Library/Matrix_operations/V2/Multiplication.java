@@ -4,7 +4,7 @@ import static Function_Library.Matrix_operations.V2.Zeromatr.Zeros;
 import static Function_Library.Matrix_operations.V2.compl.complm;
 
 // To perform matrix multiplication
-final public class Mult {
+final public class Multiplication {
     public static double[][] Multiply(double[][] A, double[][] B) {
         complm(A, B);
         double[][] result = new double[A.length][B[0].length];
