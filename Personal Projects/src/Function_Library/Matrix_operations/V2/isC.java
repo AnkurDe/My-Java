@@ -1,7 +1,7 @@
 package Function_Library.Matrix_operations.V2;
 
 // To check for corruption
-final public class isC {
+final public class IsCorrupt {
     public static boolean isCorrupt(double[][] input) {
         boolean result = false;
         if (input.length == 1) {
