@@ -4,7 +4,7 @@ import static Function_Library.Matrix_operations.V2.Checker.checker;
 
 // For performing Addition
 final public class Addition {
-    public static double[][] Add(double[][] A, double[][] B) {
+    public static double[][] add(double[][] A, double[][] B) {
         checker(A, B);
         double[][] Sum = new double[A.length][A[0].length];
 
