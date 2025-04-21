@@ -3,7 +3,7 @@ package Function_Library.Matrix_operations.V2;
 import java.util.Arrays;
 
 // To take sum of all the elements in the matrix
-public class IS extends TR {
+final public class IS {
     public static double sum(double[][] input) {
         double sum = 0;
         for (double[] doubles : input) {
