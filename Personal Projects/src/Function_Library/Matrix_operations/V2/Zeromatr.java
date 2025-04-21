@@ -1,7 +1,8 @@
 package Function_Library.Matrix_operations.V2;
 
 // To generate zero matrix
-final public class Zeromatr {
+final public class ZeroMatrix {
+    // Inputs a matrix and returns a zero matrix of the same size
     public static double[][] Zeros(double[][] input) {
         for (int i = 0; i < input.length; i++) {
             int j;
