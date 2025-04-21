@@ -9,12 +9,4 @@ public class DP extends RREF {
         }
         return dp;
     }
-
-    public static float diag_prod(float[][] Matrix) {
-        float dp = 1;
-        for (int i = 0; i < Matrix.length; i++) {
-            dp *= Matrix[i][i];
-        }
-        return dp;
-    }
 }
