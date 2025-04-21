@@ -1,7 +1,7 @@
 package Function_Library.Matrix_operations.V2;
 
 // To check if two matrices are corrupted or not
-public class chkr extends DP {
+final public class chkr {
     static void checker(double[][] A, double[][] B) {
         if (A.length != B.length || A[0].length != B[0].length) {
             throw new MatrixCorruptException("The operation number of rows or columns of matrix is not the same");
