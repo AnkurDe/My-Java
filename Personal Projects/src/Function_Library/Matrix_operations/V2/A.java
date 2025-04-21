@@ -1,5 +1,7 @@
 package Function_Library.Matrix_operations.V2;
 
+import static Function_Library.Matrix_operations.V2.chkr.checker;
+
 // For performing Addition
 public class A extends S {
     public static double[][] Add(double[][] A, double[][] B) {
