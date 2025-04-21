@@ -3,7 +3,7 @@ package Function_Library.Matrix_operations.V2;
 import static Function_Library.Matrix_operations.V2.LU.lu;
 import static Function_Library.Matrix_operations.V2.pm.printMat;
 
-public class Tester {
+final public class Tester {
     public static void main(String[] args) {
         double[][] A = {{1.0, 2.0, 3.0},
                         {4.0, 5.0, 6.0},
