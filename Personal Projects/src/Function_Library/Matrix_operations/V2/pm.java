@@ -1,6 +1,6 @@
 package Function_Library.Matrix_operations.V2;
 
-public class pm {
+final public class pm {
     // extends err
     public static void printMat(double[][] matrix) {
         for (double[] doubles : matrix) {
