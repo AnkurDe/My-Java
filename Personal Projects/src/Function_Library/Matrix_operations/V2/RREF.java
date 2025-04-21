@@ -1,7 +1,7 @@
 package Function_Library.Matrix_operations.V2;
 
 // For taking row reduced echelon form
-public class RREF extends isC {
+final public class RREF {
     public static double[][] rref(double[][] matrix) {
         int rows = matrix.length;
         int cols = matrix[0].length;
