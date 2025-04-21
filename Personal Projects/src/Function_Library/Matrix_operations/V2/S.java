@@ -3,7 +3,7 @@ package Function_Library.Matrix_operations.V2;
 import static Function_Library.Matrix_operations.V2.chkr.checker;
 
 // For performing subtraction
-public class S extends Mult {
+final public class S {
     public static double[][] Subtr(double[][] A, double[][] B) {
         checker(A, B);
         double[][] Subract = new double[A.length][A.length];
