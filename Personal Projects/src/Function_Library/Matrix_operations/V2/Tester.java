@@ -1,7 +1,7 @@
 package Function_Library.Matrix_operations.V2;
 
-import static Function_Library.Matrix_operations.V2.LU.lu;
-import static Function_Library.Matrix_operations.V2.pm.printMat;
+import static Function_Library.Matrix_operations.V2.LUDecomposition.lu;
+import static Function_Library.Matrix_operations.V2.PrintMatrix.printMat;
 
 final public class Tester {
     public static void main(String[] args) {
