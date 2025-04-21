@@ -1,5 +1,7 @@
 package Function_Library.Matrix_operations.V2;
 
+import static Function_Library.Matrix_operations.V2.isC.isCorrupt;
+
 // To check if two matrices are corrupted or not
 final public class chkr {
     static void checker(double[][] A, double[][] B) {
