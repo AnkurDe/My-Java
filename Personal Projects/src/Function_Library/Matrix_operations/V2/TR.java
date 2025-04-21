@@ -2,7 +2,7 @@ package Function_Library.Matrix_operations.V2;
 
 // Transpose of matrix
 // Incomplete
-public class TR extends sq {
+final public class TR {
     public static double[][] Transpose(double[][] input) {
         double[][] result = new double[input[0].length][input.length];
         for (int i = 0; i < input.length; i++)
