@@ -6,10 +6,6 @@ public class compl extends pm {
         return A.length != B.length || A[0].length != B[0].length;
     }// Not tested
 
-    public static boolean compla(float[][] A, float[][] B) {
-        return A.length != B.length || A[0].length != B[0].length;
-    }// Not tested
-
     // Checks compatibility for multiplication
     public static void complm(double[][] A, double[][] B) {
         if (A.length != B[0].length) {
