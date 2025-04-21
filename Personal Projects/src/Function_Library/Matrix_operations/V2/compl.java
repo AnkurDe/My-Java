@@ -12,11 +12,4 @@ public class compl extends pm {
             throw new DimensionErrorException("The matrix is not compatible for multiplication");
         }
     }// Not tested
-
-    public static void complm(float[][] A, float[][] B) {
-        if (A.length != B[0].length) {
-            throw new DimensionErrorException("The matrix is not compatible for multiplication");
-        }
-    }// Not tested
-
 }
