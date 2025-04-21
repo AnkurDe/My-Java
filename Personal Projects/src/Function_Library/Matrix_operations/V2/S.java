@@ -1,5 +1,7 @@
 package Function_Library.Matrix_operations.V2;
 
+import static Function_Library.Matrix_operations.V2.chkr.checker;
+
 // For performing subtraction
 public class S extends Mult {
     public static double[][] Subtr(double[][] A, double[][] B) {
