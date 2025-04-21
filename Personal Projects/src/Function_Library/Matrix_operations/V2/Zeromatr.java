@@ -11,14 +11,4 @@ public class Zeromatr extends IS {
         }
         return input;
     }//Tested ok
-
-    public static float[][] Zeros(float[][] input) {
-        for (int i = 0; i < input.length; i++) {
-            int j;
-            for (j = 0; j < input[0].length; j++) {
-                input[i][j] = 0.0F;
-            }
-        }
-        return input;
-    }//Tested ok
 }
