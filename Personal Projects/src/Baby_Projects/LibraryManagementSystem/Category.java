@@ -3,7 +3,8 @@ package Baby_Projects.LibraryManagementSystem;
 public class Category { // n-ary Tree Node Implementation
     Document docs; // SLL in the binary tree
     String type;
-    Category subType1, subType2;
+    // Linked List of child nodes
+    Category subType, nextType;
 
     public Category(String type) {
         this.type = type;
