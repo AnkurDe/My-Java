@@ -4,7 +4,7 @@ public class LMS {
     private static Category root;
 
     // WORKING CORRECTLY
-    static void insertInCategory(String catInsert, String subType) {
+    private static void insertInCategory(String catInsert, String subType) {
         if (root == null) {
             root = new Category(catInsert);
             return;
