@@ -70,7 +70,7 @@ public class LMS {
     // WORKING CORRECTLY
     static void insertDocRec(Document doc, String category, Category node) {
         if (node != null) {
-            if (node.type.equals(category)) {
+            if (node.getType().equals(category)) {
                 node.insertDoc(doc);
                 return;
             }
