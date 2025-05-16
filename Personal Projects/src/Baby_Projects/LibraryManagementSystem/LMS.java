@@ -13,7 +13,7 @@ public class LMS {
     }
 
     // WORKING CORRECTLY
-    static void insertInCategoryRec(String catInsert, Category node, String subType) {
+    private static void insertInCategoryRec(String catInsert, Category node, String subType) {
         if (node != null) {
             if (node.type.equals(subType)) {
                 if (node.subType1 == null) {
