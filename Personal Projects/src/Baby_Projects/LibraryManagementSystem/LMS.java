@@ -72,6 +72,7 @@ public class LMS {
         return mostDownloaded(root, null);
     }
 
+    // WORKING CORRECTLY
     static Document mostDownloaded(Category cat, Document toCompare) {
         if (cat == null) {
             return toCompare;
