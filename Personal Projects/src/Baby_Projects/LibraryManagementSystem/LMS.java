@@ -35,7 +35,7 @@ public class LMS {
     }
 
     //WORKING CORRECTLY
-    static void showCategories() {
+    private static void showCategories() {
         showCategories(root, 0);
     }
 
