@@ -67,6 +67,17 @@ public class LMS {
         insertDocRec(doc, category, root);
     }
 
+    static void insertDocRec(Document doc, String category, Category node) {
+        if (node != null) {
+            if (node.type.equals(category)) {
+                node.insertDoc(doc);
+                return;
+            }
+            insertDocRec(doc, category, node.subType1);
+            insertDocRec(doc, category, node.subType2);
+        }
+    }
+
     // WORKING CORRECTLY
     static Document mostDownloaded() {
         return mostDownloaded(root, null);
