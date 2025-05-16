@@ -63,7 +63,7 @@ public class LMS {
     }
 
     // WORKING CORRECTLY
-    static void insertDoc(Document doc, String category) {
+    private static void insertDoc(Document doc, String category) {
         insertDocRec(doc, category, root);
     }
 
