@@ -1,7 +1,7 @@
 package Baby_Projects.LibraryManagementSystem;
 
 public class LMS {
-    static Category root;
+    private static Category root;
 
     // WORKING CORRECTLY
     static void insertInCategory(String catInsert, String subType) {
