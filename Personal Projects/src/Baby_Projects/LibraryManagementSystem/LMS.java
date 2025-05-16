@@ -102,7 +102,7 @@ public class LMS {
     }
 
     public static void main(String[] args) {
-// Inserting documents
+        // Inserting documents
         insertInCategory("Science", "Science");
         insertDoc(new Document("Me", 1000, "D001", "Vigyaan kyu hai zaroori?"), "Science");
         insertDoc(new Document("Someone", 1000, "D002", "Science? Why?"), "Science");
