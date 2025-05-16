@@ -40,7 +40,7 @@ public class LMS {
     }
 
     // WORKING CORRECTLY
-    static void showCategories(Category node, int k) {
+    private static void showCategories(Category node, int k) {
         if (node != null) {
             for (int i = 0; i < k; i++) {
                 System.out.print("|\t");
