@@ -102,18 +102,6 @@ public class LMS {
         return toCompare;
     }
 
-
-    static void insertDocRec(Document doc, String category, Category node) {
-        if (node != null) {
-            if (node.type.equals(category)) {
-                node.insertDoc(doc);
-                return;
-            }
-            insertDocRec(doc, category, node.subType1);
-            insertDocRec(doc, category, node.subType2);
-        }
-    }
-
     public static void main(String[] args) {
         // Inserting documents
         insertInCategory("Science", "Science");
