@@ -34,8 +34,7 @@ public class LMS {
         }
     }
 
-//WORKING CORRECTLY
-
+    //WORKING CORRECTLY
     static void showCategories() {
         showCategories(root, 0);
     }
