@@ -4,6 +4,42 @@ public class LMS {
     private static Category root;
 
     // WORKING CORRECTLY
+    private static boolean insertInCategoryRec(String catInsert, Category node, String subType) {
+        if (node == null) {
+            return false;
+        }
+        
+        if (node.type.equals(subType)) {
+            Category newCat = new Category(catInsert);
+            if (node.subType == null) {
+                node.subType = newCat;
+            } else {
+                Category current = node.subType;
+                while (current.nextType != null) {
+                    if (current.type.equals(catInsert)) {
+                        System.out.println("Category '" + catInsert + "' already exists under '" + subType + "'");
+                        return true;
+                    }
+                    current = current.nextType;
+                }
+                if (current.type.equals(catInsert)) {
+                    System.out.println("Category '" + catInsert + "' already exists under '" + subType + "'");
+                    return true;
+                }
+                current.nextType = newCat;
+            }
+            return true;
+        }
+        
+        // Search in depth (children)
+        boolean found = insertInCategoryRec(catInsert, node.subType, subType);
+        if (!found) {
+            // If not found in children, search in siblings
+            found = insertInCategoryRec(catInsert, node.nextType, subType);
+        }
+        return found;
+    }
+
     private static void insertInCategory(String catInsert, String subType) {
         if (root == null) {
             root = new Category(catInsert);
