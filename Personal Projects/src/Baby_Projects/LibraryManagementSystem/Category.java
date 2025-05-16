@@ -8,8 +8,9 @@ public class Category { // n-ary Tree Node Implementation
 
     public Category(String type) {
         this.type = type;
-        subType1 = null;// left
-        subType2 = null;// right
+        subType = null;
+        nextType = null;
+        docs = null;
     }
 
     public String toString() {
