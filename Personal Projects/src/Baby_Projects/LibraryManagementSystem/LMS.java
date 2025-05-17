@@ -143,6 +143,10 @@ public class LMS {
         insertDoc(new Document("Me", 1000, "D001", "Bahutik Vigyaan"), "Physics");
         insertDoc(new Document("Someone", 1000, "D002", "How to physics?"), "Physics");
 
+        insertInCategory("Biology", "Science");
+        insertDoc(new Document("Me", 1000, "D001", "Jiv Vigyan"), "Biology");
+        insertDoc(new Document("Someone", 1000, "D002", "How to biology?"), "Biology");
+
         insertInCategory("Chemistry", "Science");
         insertDoc(new Document("Me", 1000, "D001", "Rasayan Vigyaan"), "Chemistry");
         insertDoc(new Document("Someone", 1000, "D002", "This subject💀 Why?"), "Chemistry");
