@@ -114,8 +114,8 @@ public class LMS {
     }
 
     // WORKING CORRECTLY
-    static Document mostDownloaded(Category cat, Document toCompare) {
-        if (cat == null) {
+    static Document mostDownloaded(Category node, Document toCompare) {
+        if (node == null) {
             return toCompare;
         }
 
