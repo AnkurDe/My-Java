@@ -45,28 +45,10 @@ public class LMS {
             root = new Category(catInsert);
             return;
         }
-        insertInCategoryRec(catInsert, root, subType);
-    }
-
-    // WORKING CORRECTLY
-    private static void insertInCategoryRec(String catInsert, Category node, String subType) {
-        if (node != null) {
-            if (node.type.equals(subType)) {
-                if (node.subType1 == null) {
-                    node.subType1 = new Category(catInsert);
-                    return;
-                } else {
-                    if (node.subType2 != null) {
-                        System.out.println("The category is filled");
-                        return;
-                    }
-                    node.subType2 = new Category(catInsert);
-                }
-                return;
-            }
-
-            insertInCategoryRec(catInsert, node.subType1, subType);
-            insertInCategoryRec(catInsert, node.subType2, subType);
+        
+        boolean success = insertInCategoryRec(catInsert, root, subType);
+        if (!success) {
+            System.out.println("Parent category '" + subType + "' not found");
         }
     }
 
