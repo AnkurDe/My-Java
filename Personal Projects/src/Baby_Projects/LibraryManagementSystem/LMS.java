@@ -59,25 +59,31 @@ public class LMS {
 
     // WORKING CORRECTLY
     private static void showCategories(Category node, int k) {
-        if (node != null) {
-            for (int i = 0; i < k; i++) {
+        if (node == null) {
+            return;
+        }
+
+        // Print current node
+        for (int i = 0; i < k; i++) {
+            System.out.print("|\t");
+        }
+        System.out.println(node.type);
+
+        // Print documents of current node
+        Document temp = node.docs;
+        while (temp != null) {
+            for (int i = 0; i < k + 1; i++) {
                 System.out.print("|\t");
             }
-
-            System.out.println(node.type);
-            Document temp = node.docs;
-
-            while (temp != null) {
-                for (int i = 0; i < k + 1; i++) {
-                    System.out.print("|\t");
-                }
-
-                System.out.println("--"+temp.toString());
-                temp = temp.next;
-            }
-            showCategories(node.subType1, k + 1);
-            showCategories(node.subType2, k + 1);
+            System.out.println("--" + temp.toString());
+            temp = temp.next;
         }
+
+        // Process first child (subType)
+        showCategories(node.subType, k + 1);
+        
+        // Process siblings (nextType)
+        showCategories(node.nextType, k);
     }
 
     // WORKING CORRECTLY
