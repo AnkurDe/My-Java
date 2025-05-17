@@ -93,14 +93,19 @@ public class LMS {
 
     // WORKING CORRECTLY
     static void insertDocRec(Document doc, String category, Category node) {
-        if (node != null) {
-            if (node.getType().equals(category)) {
-                node.insertDoc(doc);
-                return;
-            }
-            insertDocRec(doc, category, node.subType1);
-            insertDocRec(doc, category, node.subType2);
+        if (node == null) {
+            return;
         }
+
+        if (node.type.equals(category)) {
+            node.insertDoc(doc);
+            return;
+        }
+
+        // Try in subtree
+        insertDocRec(doc, category, node.subType);
+        // Try in sibling
+        insertDocRec(doc, category, node.nextType);
     }
 
     // WORKING CORRECTLY
