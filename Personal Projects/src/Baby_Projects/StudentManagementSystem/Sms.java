@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class Sms {
     // NEED TO KNOW
-    private static List<Student> students = new ArrayList<>();
+    private static final List<Student> students = new ArrayList<>();
 
     static void addStudent(Scanner sc){
         String temp1;
