@@ -119,15 +119,16 @@ public class LMS {
             return toCompare;
         }
 
-        Document localMax = cat.mostDownloaded();
-        if (localMax != null) {
-            if (toCompare == null || localMax.downloadCount > toCompare.downloadCount) {
-                toCompare = localMax;
-            }
+        // Check current node
+        Document localMax = node.mostDownloaded();
+        if (localMax != null && (toCompare == null || localMax.getDownloadCount() > toCompare.getDownloadCount())) {
+            toCompare = localMax;
         }
 
-        toCompare = mostDownloaded(cat.subType1, toCompare);
-        toCompare = mostDownloaded(cat.subType2, toCompare);
+        // Check subtree
+        toCompare = mostDownloaded(node.subType, toCompare);
+        // Check siblings
+        toCompare = mostDownloaded(node.nextType, toCompare);
 
         return toCompare;
     }
