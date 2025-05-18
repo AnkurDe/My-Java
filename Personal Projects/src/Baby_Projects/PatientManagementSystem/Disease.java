@@ -1,8 +1,8 @@
 package Baby_Projects.PatientManagementSystem;
 
 public class Disease {
-    private String date, name;
-    private double temp, sugar;
+    private final String date, name;
+    private final double temp, sugar;
 
     public Disease(String date, String name, double temp, double sugar){
         this.date = date;
