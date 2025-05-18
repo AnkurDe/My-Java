@@ -23,9 +23,9 @@ public class Patient {
 //        details.add(disease);
 
         for (int i = 0; i < details.size(); i++){
-            double sl = Math.abs(details.get(i).sugar - disease.sugar);
-            double temp = Math.abs(details.get(i).temp - disease.temp);
-            if (sl<0.5 || temp < 0.5 || disease.name.equals(details.get(i).name) || disease.date.equals(details.get(i).date)){
+            double sl = Math.abs(details.get(i).getSugar() - disease.getSugar());
+            double temp = Math.abs(details.get(i).getTemp() - disease.getTemp());
+            if (sl<0.5 || temp < 0.5 || disease.getName().equals(details.get(i).getName()) || disease.getDate().equals(details.get(i).getDate())){
                 throw new DuplicateException();
             }
         }
@@ -34,7 +34,7 @@ public class Patient {
 
     void display(){
         for (Disease d : details){
-            System.out.println(d.date + " "+ d.name + " " + d.sugar + " " + d.temp);
+            System.out.println(d.getDate() + " "+ d.getName() + " " + d.getSugar() + " " + d.getTemp());
         }
     }
 }
