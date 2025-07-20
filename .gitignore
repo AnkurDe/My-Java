@@ -1,3 +1,4 @@
 # Project exclude paths
 /out/
-/Personal Projects/src/t.java
+/Personal Projects/src/t.java/
+/.idea/
