@@ -9,10 +9,10 @@ public class _3b_Unary_Operators {
         int b = 10;
 
         // Using unary operators
-        System.out.println("Postincrement : " + (a++));
-        System.out.println("Preincrement : " + (++a));
+        System.out.println("Post increment : " + (a++));
+        System.out.println("Pre increment : " + (++a));
 
-        System.out.println("Postdecrement : " + (b--));
-        System.out.println("Predecrement : " + (--b));
+        System.out.println("Post decrement : " + (b--));
+        System.out.println("Pre decrement : " + (--b));
     }
 }

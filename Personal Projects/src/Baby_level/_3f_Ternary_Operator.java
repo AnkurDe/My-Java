@@ -6,7 +6,7 @@ public class _3f_Ternary_Operator {
     {
         int a = 20, b = 10, c = 30, result;
 
-        // result holds max of three
+        // result holds a max of three
         // numbers
         result = ((a > b) ? (a > c) ? a : c : (b > c) ? b : c);
         System.out.println("Max of three numbers = "+ result);

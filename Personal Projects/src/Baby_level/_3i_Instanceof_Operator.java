@@ -4,6 +4,18 @@ package Baby_level;
 // Instance of operator
 public class _3i_Instanceof_Operator
 {
+
+    // Classes and Interfaces used
+// are declared here
+    private static class Person {
+    }
+
+    private static class Boy extends Person implements MyInterface {
+    }
+
+    private static interface MyInterface {
+    }
+
     public static void main(String[] args)
     {
 
@@ -20,9 +32,9 @@ public class _3i_Instanceof_Operator
                 + (obj1 instanceof MyInterface));
 
         // Since obj2 is of type boy,
-        // whose parent class is person
-        // and it implements the interface Myinterface
-        // it is instance of all of these classes
+        // whose parent class is person,
+        // and it implements the interface Myinterface,
+        // it is an instance of all of these classes
         System.out.println("obj2 instanceof Person: "
                 + (obj2 instanceof Person));
         System.out.println("obj2 instanceof Boy: "
@@ -32,13 +44,3 @@ public class _3i_Instanceof_Operator
     }
 }
 
-// Classes and Interfaces used
-// are declared here
-class Person {
-}
-
-class Boy extends Person implements MyInterface {
-}
-
-interface MyInterface {
-}
