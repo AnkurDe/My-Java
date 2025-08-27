@@ -8,11 +8,9 @@ public class _12a_MethodPassing {
         int id;
         String name;
 
-        // Printing Student
-        public void printStudent()
-        {
-            System.out.println("Id:" + id);
-            System.out.println("Name:" + name);
+        @Override
+        public String toString() {
+            return "Id: " + id +"\nName: " + name;
         }
     }
 
@@ -23,6 +21,6 @@ public class _12a_MethodPassing {
         obj.id = 1;
         obj.name = "ABC";
 
-        obj.printStudent();
+        System.out.println(obj);
     }
 }

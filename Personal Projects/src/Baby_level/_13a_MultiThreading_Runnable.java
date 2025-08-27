@@ -20,7 +20,7 @@ class Multithreading implements Runnable {
 }
 
 // Main Class
-class Geeks {
+public class _13a_MultiThreading_Runnable {
     public static void main(String[] args)
     {
         int n = 8; // Number of threads

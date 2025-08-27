@@ -13,7 +13,7 @@ public class _3i_Instanceof_Operator
     private static class Boy extends Person implements MyInterface {
     }
 
-    private static interface MyInterface {
+    private interface MyInterface {
     }
 
     public static void main(String[] args)
