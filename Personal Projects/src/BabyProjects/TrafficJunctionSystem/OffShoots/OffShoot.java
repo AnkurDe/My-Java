@@ -1,8 +1,8 @@
-package Baby_Projects.TrafficJunctionSystem.OffShoots;
+package BabyProjects.TrafficJunctionSystem.OffShoots;
 
 
-import static Baby_Projects.TrafficJunctionSystem.OffShoots.Signal.RED;
-import static Baby_Projects.TrafficJunctionSystem.OffShoots.Signal.YELLOW;
+import static BabyProjects.TrafficJunctionSystem.OffShoots.Signal.RED;
+import static BabyProjects.TrafficJunctionSystem.OffShoots.Signal.YELLOW;
 
 /**
  * This is a class handling Offshoot as in a junction.

@@ -1,4 +1,4 @@
-package Baby_Projects.PatientManagementSystem;
+package BabyProjects.PatientManagementSystem;
 
 import java.util.ArrayList;
 

@@ -1,8 +1,8 @@
-package Baby_Projects.TrafficJunctionSystem;
+package BabyProjects.TrafficJunctionSystem;
 
-import Baby_Projects.TrafficJunctionSystem.Junctions.TwoWays.Junction4;
-import Baby_Projects.TrafficJunctionSystem.OffShoots.Direction;
-import Baby_Projects.TrafficJunctionSystem.OffShoots.OffShoot2Way;
+import BabyProjects.TrafficJunctionSystem.Junctions.TwoWays.Junction4;
+import BabyProjects.TrafficJunctionSystem.OffShoots.Direction;
+import BabyProjects.TrafficJunctionSystem.OffShoots.OffShoot2Way;
 
 public class TJS {
     public static void model() {

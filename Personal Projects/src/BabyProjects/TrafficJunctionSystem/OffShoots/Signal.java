@@ -1,4 +1,4 @@
-package Baby_Projects.TrafficJunctionSystem.OffShoots;
+package BabyProjects.TrafficJunctionSystem.OffShoots;
 
 public class Signal {
     public final static byte RED = 0;

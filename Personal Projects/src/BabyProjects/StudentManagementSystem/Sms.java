@@ -1,4 +1,4 @@
-package Baby_Projects.StudentManagementSystem;
+package BabyProjects.StudentManagementSystem;
 
 import java.util.ArrayList;
 import java.util.InputMismatchException;

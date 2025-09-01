@@ -1,4 +1,4 @@
-package Baby_Projects.LibraryManagementSystem;
+package BabyProjects.LibraryManagementSystem;
 
 public class LMS {
     private static Category root;

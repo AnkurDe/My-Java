@@ -1,4 +1,4 @@
-package Baby_Projects.PatientManagementSystem;
+package BabyProjects.PatientManagementSystem;
 
 public class Disease {
     private final String date, name;

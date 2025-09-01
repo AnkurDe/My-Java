@@ -1,4 +1,4 @@
-package Baby_Projects;
+package BabyProjects;
 
 import java.util.Arrays;
 

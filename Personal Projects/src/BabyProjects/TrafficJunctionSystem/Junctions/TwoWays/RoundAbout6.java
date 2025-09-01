@@ -1,6 +1,6 @@
-package Baby_Projects.TrafficJunctionSystem.Junctions.TwoWays;
+package BabyProjects.TrafficJunctionSystem.Junctions.TwoWays;
 
-import Baby_Projects.TrafficJunctionSystem.OffShoots.OffShoot2Way;
+import BabyProjects.TrafficJunctionSystem.OffShoots.OffShoot2Way;
 
 public class RoundAbout6 extends Junction {
 

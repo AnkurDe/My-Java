@@ -1,4 +1,4 @@
-package Baby_Projects.TrafficJunctionSystem.OffShoots;
+package BabyProjects.TrafficJunctionSystem.OffShoots;
 
 public class OffShoot1WayIncoming extends OffShoot {
     int noOfVehicles;

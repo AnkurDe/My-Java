@@ -1,10 +1,10 @@
-package Baby_Projects.TrafficJunctionSystem.Junctions.TwoWays;
+package BabyProjects.TrafficJunctionSystem.Junctions.TwoWays;
 
-import Baby_Projects.TrafficJunctionSystem.OffShoots.OffShoot2Way;
-import Baby_Projects.TrafficJunctionSystem.OffShoots.Signal;
+import BabyProjects.TrafficJunctionSystem.OffShoots.OffShoot2Way;
+import BabyProjects.TrafficJunctionSystem.OffShoots.Signal;
 
-import static Baby_Projects.TrafficJunctionSystem.OffShoots.Signal.GREEN;
-import static Baby_Projects.TrafficJunctionSystem.OffShoots.Signal.RED;
+import static BabyProjects.TrafficJunctionSystem.OffShoots.Signal.GREEN;
+import static BabyProjects.TrafficJunctionSystem.OffShoots.Signal.RED;
 
 public class Junction4 extends Junction {
     OffShoot2Way offShoot1, offShoot2, offShoot3, offShoot4;

@@ -1,4 +1,4 @@
-package Baby_Projects.PatientManagementSystem;
+package BabyProjects.PatientManagementSystem;
 
 public class DuplicateException extends Exception {
     public DuplicateException() {

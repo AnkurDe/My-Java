@@ -1,4 +1,4 @@
-package Baby_Projects.StudentManagementSystem;
+package BabyProjects.StudentManagementSystem;
 
 public class Student {
     private String name;
