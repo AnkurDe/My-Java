@@ -1,0 +1,21 @@
+package Baby_level._3arrays;
+
+// Java program to demonstrate
+// cloning of multidimensional arrays
+
+class _8b_Multidimensional_array_Cloning {
+    public static void main(String[] args)
+    {
+        int[][] intArray = { { 1, 2, 3 }, { 4, 5 } };
+
+        int[][] cloneArray = intArray.clone();
+
+        // will print false
+        System.out.println(intArray == cloneArray);
+
+        // will print true as shallow copy is created
+        // i.e. sub-arrays are shared
+        System.out.println(intArray[0] == cloneArray[0]);
+        System.out.println(intArray[1] == cloneArray[1]);
+    }
+}
