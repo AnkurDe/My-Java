@@ -153,7 +153,7 @@ public class LMS {
 
         insertInCategory("Reactions", "Chemistry");
         insertDoc(new Document("Me", 1000, "D001", "Why reactions occur?"), "Reactions");
-        insertDoc(new Document("Someone", 1000, "D002", "Types of reactions"), "Reactions");
+        insertDoc(new Document("Someone", 1000, "D002", "Type of reactions"), "Reactions");
 
         insertInCategory("Safety Manual", "Chemistry");
         insertDoc(new Document("Me", 1000, "D001", "Safety is important even-if you have a partner or not"), "Safety Manual");

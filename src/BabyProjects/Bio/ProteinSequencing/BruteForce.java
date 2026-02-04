@@ -10,15 +10,68 @@ import static BabyProjects.Bio.Commons.isConsistent;
 public class BruteForce {
 
     public static Set<String> sequencing(Set<Integer> spectrum) {
-        int last = Integer.MAX_VALUE;
-        Set<String> temp = new HashSet<>();
-        for (int i = 0; last != 0; i++) {
-//            for (int j = 0; j < ; j++) {
+        int parentMass = spectrum.stream().max(Integer::compareTo).get();
 
+        Set<String> peptides = new HashSet<>();
+        peptides.add("");
+
+        Set<String> result = new HashSet<>();
+
+        while (!peptides.isEmpty()) {
+            // Expand
+            Set<String> expanded = new HashSet<>();
+            for (String p : peptides) {
+                for (String aa : AMINO_ACID_MASS.keySet()) {
+                    expanded.add(p + aa);
+                }
+            }
+
+            peptides.clear();
+
+            for (String peptide : expanded) {
+
+                int m = mass(peptide);
+
+                if (m == parentMass) {
+                    if (cyclicSpectrum(peptide).equals(spectrum)) {
+                        result.add(peptide);
+                    }
+                }
+
+                if (m <= parentMass && isConsistent(peptide, spectrum)) {
+                    peptides.add(peptide);
+                }
+            }
+        }
+        return peptides;
+    }
+
+    static int mass(String peptide) {
+        int sum = 0;
+        for (char c : peptide.toCharArray()) {
+            sum += AMINO_ACID_MASS.get(c);
+        }
+        return sum;
+    }
+
+    static Set<Integer> cyclicSpectrum(String peptide) {
+
+        Set<Integer> spectrum = new HashSet<>();
+        spectrum.add(0);
+
+        int n = peptide.length();
+        String doubled = peptide + peptide;
+
+        for (int len = 1; len < n; len++) {
+            for (int i = 0; i < n; i++) {
+                spectrum.add(mass(doubled.substring(i, i + len)));
+            }
         }
 
-        return temp;
+        spectrum.add(mass(peptide));
+        return spectrum;
     }
+
 
     static void main() {
         Set<Integer> seq = new HashSet<>(Arrays.asList(

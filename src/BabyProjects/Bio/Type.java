@@ -1,6 +1,6 @@
 package BabyProjects.Bio;
 
-public enum Types {
+public enum Type {
     DNA,
     RNA,
     AMMINO,
