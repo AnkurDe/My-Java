@@ -1,5 +1,5 @@
 String transcription(String dna) {
-    StringBuilder transcribed = new StringBuilder();
+    final StringBuilder transcribed = new StringBuilder();
 
     for (char c : dna.toCharArray()){
         if (c == 'T')
