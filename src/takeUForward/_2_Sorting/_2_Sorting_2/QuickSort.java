@@ -7,9 +7,9 @@ void quick(int[] arr, int low, int high) {
     }
 }
 
-int partition(int[] arr, int low, int high) {
+int partition(int[] arr, final int low, final int high) {
     // Take last element as pivot
-    int pivot = arr[high];
+    final int pivot = arr[high];
 
     // Initialise i
     int i = low - 1;
@@ -20,12 +20,14 @@ int partition(int[] arr, int low, int high) {
             int temp = arr[i];
             arr[i] = arr[j];
             arr[j] = temp;
+            System.out.println(Arrays.toString(arr));
         }
     }
 
     int temp = arr[i + 1];
     arr[i + 1] = arr[high];
     arr[high] = temp;
+    System.out.println(Arrays.toString(arr));
     return i + 1;
 
 }

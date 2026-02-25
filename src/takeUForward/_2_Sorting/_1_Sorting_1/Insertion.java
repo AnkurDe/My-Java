@@ -1,5 +1,4 @@
 void insertion(int[] arr) {
-    int sortedIndex = 0;
     for (int i = 0; i < arr.length; i++) {
         int key = arr[i];
         int j = i-1;
