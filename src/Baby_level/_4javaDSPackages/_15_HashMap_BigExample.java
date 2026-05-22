@@ -87,10 +87,10 @@ public class _15_HashMap_BigExample {
 
         System.out.println(nameMap.get("Utham"));
 
-        System.out.println(nameMap.containsKey("Ankur") ? "Ankur's there in the map" : "Ankur's not there in the map");
-        System.out.println(nameMap.containsKey("Pavitra") ? "Pavitra's there in the map" : "Pavitra's not there in the map");
+        System.out.println(nameMap.containsKey("Ankur") ? "Ankur's there in the dict" : "Ankur's not there in the dict");
+        System.out.println(nameMap.containsKey("Pavitra") ? "Pavitra's there in the dict" : "Pavitra's not there in the dict");
 
-        System.out.println(idMap.containsValue(new Student("Ankur", 7337734076L, 24105)) ? "These values are in the map" : "These values are not in teh map");
+        System.out.println(idMap.containsValue(new Student("Ankur", 7337734076L, 24105)) ? "These values are in the dict" : "These values are not in teh dict");
 
         System.out.println("\nLooping by key");
         loopMapByKey();
@@ -105,7 +105,7 @@ public class _15_HashMap_BigExample {
         removeStudent("Jiya", 4154468954L, 24123);
         System.out.println(nameMap);
 
-        System.out.println("Size of map is: " + idMap.size());
+        System.out.println("Size of dict is: " + idMap.size());
 
         clearAllData();
         System.out.println(idMap);

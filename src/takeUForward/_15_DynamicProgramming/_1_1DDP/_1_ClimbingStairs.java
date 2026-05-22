@@ -1,7 +1,10 @@
-// Given a number of stairs. Starting from the 0th stair we need to climb to the “Nth” stair. At a time we can climb either one or two steps. We need to return the total number of distinct ways to reach from 0th to Nth stair.
+/** <h1>Problem Statement</h1>
+ * Given a number of stairs. Starting from the 0th stair we need to climb to the “Nth” stair.
+ * At a time we can climb either one or two steps.
+ * We need to return the total number of distinct ways to reach from 0th to Nth stair.
+ */
 
-
-// Looks very much like Fubbonacci problem
+// Looks very much like Fibonacci problem
 // Say you are on 10th step then your previous step could have been 2 steps or 1 step, Then in that 2 steps you might have made 2, 1 and so on and so forth
 
 int numberOfStepsMemoization(int stairs) {

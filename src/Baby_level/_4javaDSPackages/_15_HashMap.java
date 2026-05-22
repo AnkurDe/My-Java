@@ -10,7 +10,7 @@ public class _15_HashMap {
         map.put("Kartikeya", 146);
         map.put("Pavitra", 137);
 
-        System.out.println("The map is ");
+        System.out.println("The dict is ");
         System.out.println(map);
 
         System.out.println("\nGetting values by keys");
@@ -28,7 +28,7 @@ public class _15_HashMap {
         System.out.println("\nRemoving Kartikeya");
         map.remove("Kartikeya");
 
-        System.out.println("\nPrinting map");
+        System.out.println("\nPrinting dict");
         System.out.println(map);
 
         System.out.println("\nKeysets");
@@ -48,9 +48,9 @@ public class _15_HashMap {
         for (Map.Entry<String, Integer> entry : map.entrySet())
             System.out.println(entry.getKey() + ": " + entry.getValue());
 
-        System.out.println("\nSize of map is: " + map.size());
+        System.out.println("\nSize of dict is: " + map.size());
 
-        System.out.println("\nClearing map");
+        System.out.println("\nClearing dict");
         map.clear();
 
         System.out.println(map);

@@ -1,4 +1,4 @@
-package Baby_level._6_SocketsAndNetworking._2;
+package Baby_level._6_SocketsAndNetworking.TCP._1;
 
 import java.io.IOException;
 import java.io.PrintWriter;
