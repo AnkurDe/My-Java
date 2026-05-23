@@ -8,14 +8,24 @@ int uniquePaths(int m, int n) {
     int[] arr = new int[n];
     Arrays.fill(arr, 1);
 
-    for (int i = 0; i < m-1; i++) {
+    for (int i = 1; i < m; i++) {
         for (int j = 1; j < n; j++) {
-
+            arr[j] += arr[j - 1];
         }
     }
-    return arr[n-1];
+    return arr[n - 1];
+}
+
+void testing(int m, int n) {
+    System.out.printf("The number of unique paths for %dx%d grid is %d\n", m, n, uniquePaths(m, n));
 }
 
 void main() {
-
+    int[][] testCases = {
+            {3, 2},
+            {2, 4}
+    };
+    for (int[] test : testCases) {
+        testing(test[0], test[1]);
+    }
 }
